@@ -19,6 +19,7 @@ public class TaskService {
     }
 
     public Task addBook(Task task) {
+        task.setStatus(TaskStatus.ONGOING);
         return taskRepository.save(task);
     }
 
